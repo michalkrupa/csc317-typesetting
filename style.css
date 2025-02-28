@@ -126,10 +126,11 @@ nav {
   border-style: solid;
   border-image: linear-gradient(to bottom, #a66, transparent) 1;
   min-height: 300px;
-  ul {
-    list-style: none;
-    padding: 0 0 0 1rem;
-  }
+}
+
+nav ul {
+  list-style: none;
+  padding: 0 0 0 1rem;
 }
 
 nav li {
@@ -140,10 +141,6 @@ nav li {
   color: #a66;
   &:hover {
     background-color: #a66;
-    cursor: pointer;
-    a {
-      color: #fff;
-    }
   }
 }
 
@@ -158,5 +155,3 @@ nav a {
   width: 100%;
   height: 100%;
 }
-
-/* TODO: fix nav link styles */
