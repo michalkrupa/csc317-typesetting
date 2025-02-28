@@ -42,4 +42,121 @@ header, footer {
 }
 
 /* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+* {
+  font-family: "Zilla Slab", serif; 
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  line-height: initial;
+}
+
+h2 {
+  font-size: 2rem;
+  + p {
+    text-indent: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p, ul, ol {
+  margin: 1em 0;
+}
+
+ul {
+  list-style: circle;
+}
+
+a {
+  text-indent: 0;
+  text-decoration: underline;
+  color: #a66;
+  &:visited {
+    color: #4d2f2f;
+  }
+  &:hover {
+    color: #db8181;
+    text-decoration: none;
+  }
+  &:focus {
+    color: #626161;
+    text-decoration: none;
+    outline: none;
+  }
+  &:active {
+    color: #ab7106;
+  }
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 3px;
+  background-image: url('./external-link-52.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  border-width: 0 0 0 5px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #a66, transparent) 1;
+  min-height: 300px;
+  ul {
+    list-style: none;
+    padding: 0 0 0 1rem;
+  }
+}
+
+nav li {
+  border: solid 1px #a66;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #a66;
+  &:hover {
+    background-color: #a66;
+    cursor: pointer;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+nav a {
+  &:hover {
+    color: #fff;
+  }
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 0.5em 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* TODO: fix nav link styles */
